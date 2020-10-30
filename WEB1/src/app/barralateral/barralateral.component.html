@@ -1,0 +1,30 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+        <mat-toolbar>Menu</mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item routerLink="/ejercicio1">Ejercicio 1</a>
+            <a mat-list-item routerLink="/ejercicio2">Ejercicio 2</a>
+            <a mat-list-item routerLink="/ejercicio3">Ejercicio 3</a>
+            <a mat-list-item routerLink="/ejercicio4">Ejercicio 4</a>
+            <a mat-list-item routerLink="/ejercicio5">Ejercicio 5</a>
+            <a mat-list-item routerLink="/ejercicio6">Ejercicio 6</a>
+            <a mat-list-item routerLink="/ejercicio7">Ejercicio 7</a>
+            <a mat-list-item routerLink="/ejercicio8">Ejercicio 8</a>
+            <a mat-list-item routerLink="/ejercicio9">Ejercicio 9</a>
+            <a mat-list-item routerLink="/ejercicio10">Ejercicio 10</a>
+            <a mat-list-item routerLink="/ejercicio11">Ejercicio 11</a>
+            <a mat-list-item routerLink="/ejercicio12">Ejercicio 12</a>
+            <a mat-list-item routerLink="/ejercicio13">Ejercicio 13</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+            <span>proyecto13</span>
+        </mat-toolbar>
+        <!-- Add Content Here -->
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
