@@ -1,0 +1,211 @@
+body {
+    background: white;
+    margin: 50px;
+}
+
+
+/* Este es el primer ejemplo
+#recuadro1{
+    -moz-column-count:3;
+    -webkit-column-count:3;
+    column-count:3;
+    border-radius: 20px;  
+    background-color:#ddd;
+    width:600px;
+    padding:10px;
+  }
+    */
+
+
+/* Este es el segundo ejemplo
+  #recuadro1{
+    -moz-column-width:200px;
+    -webkit-column-width:200px;
+    column-width:200px;
+    border-radius: 20px;  
+    background-color:#ddd;
+    padding:10px;
+  }
+  
+  #recuadro2{
+    -moz-column-width:200px;
+    -webkit-column-width:200px;
+    column-width:200px;
+    border-radius: 20px;  
+    background-color:#ddd;
+    padding:10px;
+    margin-top:10px;
+  }
+  
+  #recuadro2 p {
+    margin: 0;
+    text-indent: 1em;
+    text-align: justify;
+  }
+*/
+
+
+/* Este es el tercer ejemplo 
+  #recuadro1{
+    -moz-column-gap:40px;
+    -webkit-column-gap:40px;
+    column-gap:40px;
+    -moz-column-count:3;
+    -webkit-column-count:3;
+    column-count:3;
+    border-radius: 20px;  
+    background-color:#ddd;
+    width:600px;
+    padding:10px;
+  }
+
+*/
+
+
+/* Este es el cuarto ejemplo de recuadros */
+
+
+/* 
+#recuadro1 {
+    -moz-column-rule: 1px solid #f00;
+    -webkit-column-rule: 1px solid #f00;
+    column-rule: 1px solid #f00;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    border-radius: 20px;
+    background-color: #ddd;
+    width: 600px;
+    padding: 10px;
+}
+ */
+
+#recuadro2 {
+    -moz-column-rule: 3px dotted #f00;
+    -webkit-column-rule: 3px dotted #f00;
+    column-rule: 3px dotted #f00;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    border-radius: 20px;
+    background-color: #ddd;
+    width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#recuadro3 {
+    -moz-column-rule-width: 2px;
+    -webkit-column-rule-width: 2px;
+    column-rule-width: 2px;
+    -moz-column-rule-style: dashed;
+    -webkit-column-rule-style: dashed;
+    column-rule-style: dashed;
+    -moz-column-rule-color: #00f;
+    -webkit-column-rule-color: #00f;
+    column-rule-color: #00f;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    border-radius: 20px;
+    background-color: #ddd;
+    width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#recuadro4 {
+    -moz-column-rule: 3px double #f00;
+    -webkit-column-rule: 3px double #f00;
+    column-rule: 3px double #f00;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    border-radius: 20px;
+    background-color: #ddd;
+    width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+/* Este es el quinto ejemplo de recuadros */
+
+
+/* 
+@font-face {
+    font-family: "Ubuntu";
+    src: url("Ubuntu-Title-webfont.eot") format("eot"), url("Ubuntu-Title-webfont.woff") format("woff"), url("Ubuntu-Title-webfont.ttf") format("truetype"), url("Ubuntu-Title-webfont.svg#UbuntuTitle") format("svg");
+}
+
+#recuadro1 {
+    border-radius: 20px;
+    background-color: #ddd;
+    width: 200px;
+    padding: 10px;
+}
+
+#recuadro1 p {
+    font-family: Ubuntu;
+    color: #ff0000;
+    font-size: 20px;
+}
+ */
+
+
+/* Este es el sexto ejemplo de recuadros */
+
+#recuadro1 {
+    left: 30px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #ddd;
+    width: 200px;
+    height: 100px;
+    padding: 4px;
+    -moz-animation-name: animacion1;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -webkit-animation-name: animacion1;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -o-animation-name: animacion1;
+    -o-animation-duration: 4s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+}
+
+@-moz-keyframes animacion1 {
+    from {
+        left: 30px;
+        background-color: #ddd;
+    }
+    to {
+        left: 300px;
+        background-color: #ff0;
+    }
+}
+
+@-webkit-keyframes animacion1 {
+    from {
+        left: 30px;
+        background-color: #ddd;
+    }
+    to {
+        left: 300px;
+        background-color: #ff0;
+    }
+}
+
+@-o-keyframes animacion1 {
+    from {
+        left: 30px;
+        background-color: #ddd;
+    }
+    to {
+        left: 300px;
+        background-color: #ff0;
+    }
+}
